@@ -9,14 +9,15 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ccc;
   }
-  .container {
+  .container > .section {
     width: 80%;
     margin: auto;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #eee;
   }
   .header {
     text-align: center;
@@ -24,10 +25,13 @@
     border-bottom: 2px solid #eee;
   }
   .header img {
-    width: 115px;
-    height: 150px;
-    border-radius: 20%;
-    margin-bottom: 10px;
+    width: auto;
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    border: 4px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
   }
   .header h1 {
     margin: 10px 0 5px;
@@ -35,7 +39,7 @@
   }
   .header p {
     margin: 5px 0;
-    color: #777;
+    color: #000;
   }
   .section {
     padding: 20px 0;
@@ -72,6 +76,28 @@
     display: inline-block; 
     width: 1em;
     margin-left: -1em;
+  }
+  .section-content .plus-list .minus-list {
+  list-style-type: none; 
+  }
+  .section-content .plus-list li:before {
+  content: "+";
+  margin-right: 5px;
+  }
+  .section-content .minus-list li:before {
+  content: "-";
+  margin-right: 5px;
+  }
+  .plus-list .minus-list {
+  list-style-type: none; 
+  }
+  .plus-list li:before {
+  content: "+";
+  margin-right: 5px;
+  }
+  .minus-list li:before {
+  content: "-";
+  margin-right: 5px;
   }
 </style>
 </head>
@@ -113,7 +139,7 @@
         <p>Metrotech Digital Asia</p>
         <p>December 2021 - March 2022</p>
         <ul>
-          <li>Accompanying the work on website projects and social media account called "Others.TS"</li>
+          <li>Accompanying the work on website project and social media account called "Others.TS"</li>
           <li>Helping in UI/UX design and typography of "Others.TS" website.</li>
           <li>Providing strategic recommendations to enhance the foundational content of the "others.ts" website.</li>
         </ul>
@@ -122,6 +148,28 @@
         <ul>
           <li>OBS Operator</li>
           <li>Livestream's Slide Operator</li>
+        </ul>
+        <h3>Languages Proficiency</h3>
+        <ul>
+          <li>Indonesia</li>
+          <li>English</li>
+        </ul>
+        <h3>Skills</h3>
+        <ul>
+          <li>Microsoft Word</li>
+          <li>Figma</li>
+          <li>Canva</li>
+          <li>MikroTik</li>
+        </ul> 
+        <h3>Strengths & Weaknesses</h3>
+        <ul class="plus-list">
+          <li>Creativity</li>
+          <li>Teamwork</li>
+          <li>Problem Solving</li>
+        </ul>
+        <ul class="minus-list">
+          <li>Discipline</li>
+          <li>Time Management</li>
         </ul>
       </div>
     </div>
@@ -132,7 +180,17 @@
         <p>Valorant Division Member</p>
         <p>2021-2022</p>
       </div>
-    </div>
   </div>
+  <div class="section">
+    <h2 class="section-title">Miscellaneous</h2>
+    <div class="section-content">
+      <h3>Hobbies</h3>
+        <ul>
+          <li>Watching movies, especially neo-noir genre</li>
+          <li>Playing video games</li>
+          <li>Listening to music</li>
+        </ul>
+    </div>
+</div>
 </body>
 </html>
